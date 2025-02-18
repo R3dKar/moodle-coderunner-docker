@@ -18,7 +18,7 @@ After installation on website head to `Site Administration > General > Security 
 
 The servers starts on http://localhost:8000/ 
 
-**Linux (& MaxOS probably):**
+**Linux (& MacOS probably):**
 ```sh
 # starting
 ./launch.sh
