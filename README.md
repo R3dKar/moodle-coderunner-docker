@@ -12,8 +12,7 @@ git clone https://github.com/trampgeek/moodle-qtype_coderunner.git ./moodle/ques
 git clone https://github.com/trampgeek/moodle-qbehaviour_adaptive_adapted_for_coderunner.git ./moodle/question/behaviour/adaptive_adapted_for_coderunner
 ```
 
-TODO: add http cURL blocked fix instructions
-
+After installation on website head to `Site Administration > General > Security > HTTP security` and delete all from `cURL blocked hosts list`. Also head to `Site Administration > Plugins > Question types > CodeRunner` and set `Jobe server` to `jobe` and delete `Jobe API-key`.
 
 ## Usage
 
