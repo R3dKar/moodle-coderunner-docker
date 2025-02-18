@@ -16,6 +16,8 @@ After installation on website head to `Site Administration > General > Security 
 
 ## Usage
 
+The servers starts on http://localhost:8000/ 
+
 **Linux (& MaxOS probably):**
 ```sh
 # starting
