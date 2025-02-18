@@ -1,3 +1,37 @@
+# Fork specific information
+This fork contains instruction for launching moodle locally with coderunner and jobe.
+
+## Installation
+```sh
+git clone https://github.com/R3dKar/moodle-coderunner-docker.git
+cd moodle-coderunner-docker
+
+git clone -b MOODLE_403_STABLE git://git.moodle.org/moodle.git ./moodle
+cp config.docker-template.php ./moodle/config.php
+git clone https://github.com/trampgeek/moodle-qtype_coderunner.git ./moodle/question/type/coderunner
+git clone https://github.com/trampgeek/moodle-qbehaviour_adaptive_adapted_for_coderunner.git ./moodle/question/behaviour/adaptive_adapted_for_coderunner
+```
+
+TODO: add http cURL blocked fix instructions
+
+
+## Usage
+
+**Linux (& MaxOS probably):**
+```sh
+# starting
+./launch.sh
+
+# stopping
+./stop.sh
+```
+
+**Windows:**
+
+Check out `launch.sh` and `stop.sh` scripts and create your own. The key is to export `MOODLE_DOCKER_WWWROOT` as `./moodle` and `MOODLE_DOCKER_DB` as `pgsql` or other db, then launch `bin/moodle-docker-compose.cmd`.
+
+---
+
 # moodle-docker: Docker Containers for Moodle Developers
 [![moodle-docker CI](https://github.com/moodlehq/moodle-docker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/moodlehq/moodle-docker/actions/workflows/ci.yml)
 
