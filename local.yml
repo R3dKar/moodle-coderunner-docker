@@ -1,3 +1,0 @@
-services:
-  jobe:
-    image: trampgeek/jobeinabox
