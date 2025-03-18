@@ -29,7 +29,13 @@ The servers starts on http://localhost:8000/
 
 **Windows:**
 
-Check out `launch.sh` and `stop.sh` scripts and create your own. The key is to export `MOODLE_DOCKER_WWWROOT` as `./moodle` and `MOODLE_DOCKER_DB` as `pgsql` or other db, then launch `bin/moodle-docker-compose.cmd`.
+```powershell
+# starting
+.\launch.ps1
+
+# stopping
+.\stop.ps1
+```
 
 ---
 
